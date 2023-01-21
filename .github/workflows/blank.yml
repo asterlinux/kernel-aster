@@ -23,9 +23,6 @@ jobs:
          ls
          ls
          
-      - name: Change owner
-        run: |
-         chown -R $USER:$USER *zen-kernel*
       - name: Build
         run: |
          cd zen-kernel-6.1.7-lqx2
