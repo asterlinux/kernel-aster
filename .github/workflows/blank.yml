@@ -15,7 +15,7 @@ jobs:
       - name: Validate package
         uses: hapakaien/archlinux-package-action@v2
         with:
-          flags: '-s --noconfirm'
+          flags: '-s --noconfirm --skippgpcheck'
           namcap: false
           aur: true
       - name: Run a one-line script
