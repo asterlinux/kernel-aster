@@ -15,7 +15,7 @@ jobs:
       - name: Validate package
         uses: hapakaien/archlinux-package-action@v2
         with:
-          path: $GITHUB_WORKSPACE/
+          path: $GITHUB_WORKSPACE
           flags: '-si --noconfirm'
           namcap: false
       - name: Run a one-line script
