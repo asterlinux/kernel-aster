@@ -21,7 +21,7 @@ jobs:
          tar -xf v6.1.7-lqx2.tar.gz
          cd zen-kernel-6.1.7-lqx2
          make mrproper
-         cp ../../config .
+         cp ~/config .
          make -j4
          make modules
          
