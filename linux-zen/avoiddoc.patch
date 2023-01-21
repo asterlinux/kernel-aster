@@ -1,0 +1,8 @@
+63c63
+<   make htmldocs all
+---
+>   make all
+195c195
+< pkgname=("$pkgbase" "$pkgbase-headers" "$pkgbase-docs")
+---
+> pkgname=("$pkgbase" "$pkgbase-headers")
