@@ -19,8 +19,8 @@ jobs:
          cd ~/kernelbuild
          wget https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v6.1.7-lqx2.tar.gz
          tar -xvf v6.1.7-lqx2.tar.gz
-         chown -R $USER:$USER v6.1.7-lqx2
-         cd v6.1.7-lqx2
+         chown -R $USER:$USER zen-kernel-6.1.7-lqx2
+         cd zen-kernel-6.1.7-lqx2
          make mrproper
          cp ../../config .
          make -j4
