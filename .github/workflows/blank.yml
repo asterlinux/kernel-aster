@@ -15,6 +15,7 @@ jobs:
       - name: Run a one-line script
         run: |
          pwd
+         ls
          sudo apt install tar wget
          mkdir ~/kernelbuild
          cd ~/kernelbuild
