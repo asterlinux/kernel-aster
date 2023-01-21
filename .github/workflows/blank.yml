@@ -19,17 +19,13 @@ jobs:
          cd ~/kernelbuild
          wget https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v6.1.7-lqx2.tar.gz
          tar -xf v6.1.7-lqx2.tar.gz
-         ls
-         ls
-         ls
-         
-      - name: Build
-        run: |
          cd zen-kernel-6.1.7-lqx2
          make mrproper
          cp ../../config .
          make -j4
          make modules
+         
+
          
          
          
