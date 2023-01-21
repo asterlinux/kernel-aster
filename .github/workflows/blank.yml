@@ -18,8 +18,12 @@ jobs:
          mkdir ~/kernelbuild
          cd ~/kernelbuild
          wget https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v6.1.7-lqx2.tar.gz
-         tar -xvf v6.1.7-lqx2.tar.gz
+         tar -xf v6.1.7-lqx2.tar.gz
+      - name: Change owner
+        run: |
          chown -R $USER:$USER zen-kernel-6.1.7-lqx2
+      - name: Build
+        run: |
          cd zen-kernel-6.1.7-lqx2
          make mrproper
          cp ../../config .
