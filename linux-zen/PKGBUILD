@@ -1,9 +1,9 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
-pkgbase=linux-zen
-pkgver=6.1.7.zen1
+pkgbase=linux-zen-aster
+pkgver=6.1.7.zen1.aster
 pkgrel=1
-pkgdesc='Linux ZEN'
+pkgdesc='Linux ZEN Aster'
 _srctag=v${pkgver%.*}-${pkgver##*.}
 url="https://github.com/zen-kernel/zen-kernel/commits/$_srctag"
 arch=(x86_64)
