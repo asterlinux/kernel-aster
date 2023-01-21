@@ -12,6 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: install dependencies
-        run: sudo apt install -y gcc make
+        run: sudo apt install -y gcc make git
+      - name: download kernel build
+        run: |
+         git clone https://github.com/zen-kernel/zen-kernel.git
+         cd zen-kernel
+        
       - name: make kernel
         run: make defconfig && make -j "nproc"
