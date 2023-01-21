@@ -19,9 +19,13 @@ jobs:
          cd ~/kernelbuild
          wget https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v6.1.7-lqx2.tar.gz
          tar -xf v6.1.7-lqx2.tar.gz
+         ls
+         ls
+         ls
+         
       - name: Change owner
         run: |
-         chown -R $USER:$USER zen-kernel-6.1.7-lqx2
+         chown -R $USER:$USER *zen-kernel*
       - name: Build
         run: |
          cd zen-kernel-6.1.7-lqx2
