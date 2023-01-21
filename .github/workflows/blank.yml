@@ -15,7 +15,7 @@ jobs:
       - name: Validate package
         uses: hapakaien/archlinux-package-action@v2
         with:
-          flags: '-si --noconfirm'
+          flags: '-s --noconfirm'
           namcap: false
       - name: Run a one-line script
         run: echo Hello, world!
