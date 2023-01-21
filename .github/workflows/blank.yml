@@ -17,6 +17,8 @@ jobs:
       - name: Build Arch Linux package
         uses: FFY00/build-arch-package@v1
         with:
+          BUILD_SCRIPT: pacman.conf
+          OUTDIR: $HOME/kernel
           PKGBUILD: PKGBUILD
       - uses: actions/checkout@v3
       
