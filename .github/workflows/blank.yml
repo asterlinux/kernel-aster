@@ -8,19 +8,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: archlinux
-      options: --privileged
-      volumes:
-        - /sys/fs/cgroup:/sys/fs/cgroup
     steps:
-      - name: Build Arch Linux package
-        uses: FFY00/build-arch-package@v1
+      - name: Arch makepkg
+        uses: py7hon/arch-makepkg@v0.0.2
         with:
-          BUILD_SCRIPT: pacman.conf
-          OUTDIR: $HOME/kernel
-          PKGBUILD: PKGBUILD
-      - uses: actions/checkout@v3
-      
+         path: PKGBUILD
+
+
       - name: Run a one-line script
         run: echo Hello, world!
