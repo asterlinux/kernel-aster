@@ -17,7 +17,7 @@ jobs:
       - name: Build Arch Linux package
         uses: FFY00/build-arch-package@v1
         with:
-          PKGBUILD: linux-zen/PKGBUILD
+          PKGBUILD: $HOME/linux-zen/PKGBUILD
       - uses: actions/checkout@v3
       
       - name: Run a one-line script
