@@ -15,7 +15,7 @@ jobs:
       - name: Run a one-line script
         run: |
              ls
-             /home/runner/work/kernel-aster/./build.sh
+             ./build.sh
              
 
          
