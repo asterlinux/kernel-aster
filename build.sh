@@ -8,5 +8,4 @@ sudo chown -R $USER:$USER linux-6.1.7
 cd linux-6.1.7
 make mrproper
 cp ../.config .
-make -j2
-make modules
+make
