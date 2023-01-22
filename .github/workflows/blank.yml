@@ -13,9 +13,16 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run a one-line script
+        run: bash build.sh
+             
+      - name: Commit report
         run: |
-             ls
-             bash build.sh
+          git add .
+          git config --global user.name 'asterlinux'
+          git config --global user.email 'asterlinux@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push
+        
              
 
          
