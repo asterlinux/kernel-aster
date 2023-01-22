@@ -21,7 +21,7 @@ jobs:
          cd ~/kernelbuild
          wget https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v6.1.7-lqx2.tar.gz
          tar -xf v6.1.7-lqx2.tar.gz
-         chown -R $USER:$USER zen-kernel-6.1.7-lqx2
+         sudo chown -R $USER:$USER zen-kernel-6.1.7-lqx2
          cd zen-kernel-6.1.7-lqx2
          make mrproper
          cp /home/runner/work/kernel-aster/kernel-aster/config .config
