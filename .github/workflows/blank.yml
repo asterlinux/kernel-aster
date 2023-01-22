@@ -14,8 +14,6 @@ jobs:
 
       - name: Run a one-line script
         run: |
-         pwd
-         ls
          sudo apt install tar wget
          wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.7.tar.xz
          tar -xf linux-6.1.7.tar.xz
