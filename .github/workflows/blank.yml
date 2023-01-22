@@ -13,7 +13,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run a one-line script
-        run: /home/runner/work/kernel-aster/./build.sh
+        run: |
+             ls
+             /home/runner/work/kernel-aster/./build.sh
+             
 
          
          
